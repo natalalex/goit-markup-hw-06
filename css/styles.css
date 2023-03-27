@@ -701,7 +701,9 @@ footer-social-icon *************/
   border-radius: 4px;
   background-color: transparent;
 }
-
+.footer-subscribe-input {
+  color: var(--color-title-site);
+}
 .footer-subscribe-input::placeholder {
   font-size: 12px;
   line-height: 2;
@@ -709,7 +711,7 @@ footer-social-icon *************/
 .subscribe-btn {
   display: flex;
   height: 40px;
-  max-width: 165 px;
+  min-width: 165px;
   align-items: center;
   justify-content: center;
   padding: 8px var(--default-small-gap);
