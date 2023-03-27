@@ -169,7 +169,7 @@ button {
   position: absolute;
   left: 0;
   bottom: 0;
-  transform: translateY(24px);
+  transform: translateY(28px);
 }
 
 .menu-link.current {
@@ -553,7 +553,7 @@ button {
   margin: 0;
   width: 100%;
   height: 100%;
-  padding: 40px 32px 164px 32px;
+  padding: 40px 32px 0 32px;
 
   background-color: var(--color-primary-brand);
   color: var(--color-light);
@@ -751,8 +751,8 @@ footer-social-icon *************/
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   z-index: 100;
-
-  transition: opacity var(--transition-dur-and-fun), opacity var(--transition-dur-and-fun);
+  opacity: 1;
+  transition: opacity var(--transition-dur-and-fun), transform var(--transition-dur-and-fun);
 }
 
 .backdrop.is-hidden {
