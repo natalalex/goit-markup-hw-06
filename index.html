@@ -368,6 +368,24 @@
           </ul>
         </div>
         <!-- / footer contacts in social networks -->
+
+        <!-- ********** footer-subscribe-form****** -->
+        <div class="footer-subscribe">
+          <form class="footer-subscribe-form">
+            <label class="footer-subscribe-label">
+              <span class="subscribe-text">Subscribe</span>
+              <input class="footer-subscribe-input" name="subscribe-email" type="email" required placeholder="E-mail" />
+            </label>
+            <button type="submit" class="subscribe-btn">
+              <span class="text-subscribe-btn">Subscribe</span>
+              <svg class="icon-subscribe-btn">
+                <use href="./images/decor/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+         <!-- ********** / footer-subscribe-form****** -->
+         
       </div>
     </footer>
 
@@ -379,6 +397,49 @@
             <use href="./images/decor/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <p class="modal-text">Leave your contacts and we will call you back</p>
+
+          <label class="modal-label">
+            <span class="label-text">Name</span>
+            <span class="modal-input-wrapper">
+              <input class="modal-input" name="client-name" type="text" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space." />
+              <svg class="modal-input-icon">
+                <use href="./images/decor/icons.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-label">
+            <span class="label-text">Phone</span>
+            <span class="modal-input-wrapper">
+              <input class="modal-input" name="client-phone" type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="XXX-XXX-XX-XX" />
+              <svg class="modal-input-icon">
+                <use href="./images/decor/icons.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-label">
+            <span class="label-text">Email</span>
+            <span class="modal-input-wrapper">
+              <input class="modal-input" name="client-email" type="email" />
+              <svg class="modal-input-icon">
+                <use href="./images/decor/icons.svg#icon-email"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-label">
+            <span class="label-text">Comment</span>
+            <textarea class="modal-comment" name="client-comment" placeholder="Text input"></textarea>
+          </label>
+
+          <input class="modal-checkbox hidden-header" name="client-policy" type="checkbox" id="checkbox-policy" required />
+          <label class="modal-label-checkbox label-text" for="checkbox-policy">I accept the terms and conditions of the&nbsp;<a class="policy-link" href="">Privacy Policy</a> </label>
+
+          <button class="modal-send-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <!--!#######  / modal window   ####### -->
