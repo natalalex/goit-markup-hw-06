@@ -585,7 +585,6 @@ button {
 
 .footer-cotainer {
   display: flex;
-  align-items: flex-start;
 }
 
 .logo-footer {
@@ -609,9 +608,9 @@ button {
 
 /*************** footer-social-icon *************/
 .footer-social-icon {
-  width: 208px;
+  /* width: 208px;
   height: 80px;
-  margin-right: 80px;
+  margin-right: 80px; */
 }
 
 .footer-social-title {
@@ -660,30 +659,27 @@ button {
 .footer-social-icon-link:hover {
   background-color: #31d0aa;
 }
-/***************/
-footer-social-icon *************/
+/*************** /footer-social-icon *************/
 
 /************** footer-subscribe-form  ********/
-.footer-subscribe {
+
+.footer-subscribe-form {
   width: 453px;
   height: 80px;
-}
-.footer-subscribe-form {
+  margin-left: auto;
   display: flex;
-  flex-shrink: 0;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: start;
   width: 453px;
   padding: 0;
   height: 80px;
-  align-items: end;
-  justify-content: space-between;
+}
+.subscribe-wrapper {
+  display: flex;
   gap: var(--default-small-gap);
 }
-.footer-subscribe-label {
-  display: flex;
-  flex-direction: column;
-}
 .subscribe-text {
+  margin-top: 0;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -715,10 +711,10 @@ footer-social-icon *************/
   align-items: center;
   justify-content: center;
   padding: 8px var(--default-small-gap);
-  gap: 16px;
+
   background: var(--color-primary-brand);
   border-radius: 4px;
-
+  border: none;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -729,6 +725,7 @@ footer-social-icon *************/
   transition: background-color var(--transition-dur-and-fun);
 }
 .icon-subscribe-btn {
+  margin-left: 16px;
   width: 24px;
   height: 24px;
   fill: var(--color-title-site);
@@ -768,8 +765,8 @@ footer-social-icon *************/
 .modal {
   position: absolute;
   min-width: 408px;
-  min-height: 584px;
-  padding: var(--default-small-gap);
+  /* min-height: 584px; */
+  padding: 72px var(--default-small-gap) var(--default-small-gap);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -818,7 +815,7 @@ footer-social-icon *************/
 }
 
 .modal-text {
-  margin: calc(var(--default-small-gap) * 2) 0 16px 0;
+  margin-bottom: 16px;
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
@@ -902,6 +899,7 @@ footer-social-icon *************/
 .modal-label-checkbox {
   display: flex;
   align-items: center;
+  margin-bottom: var(--default-small-gap);
 }
 .modal-label-checkbox::before {
   content: "";
@@ -929,11 +927,10 @@ footer-social-icon *************/
 }
 
 .modal-send-btn {
+  display: block;
+  margin: 0 auto;
   border: none;
-  position: absolute;
   bottom: var(--default-small-gap);
-  left: 50%;
-  transform: translateX(-50%);
   width: 169px;
   height: 56px;
   background: var(--color-primary-brand);
