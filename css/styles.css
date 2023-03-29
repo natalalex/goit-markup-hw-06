@@ -827,7 +827,6 @@ button {
 .modal-label {
   display: flex;
   flex-direction: column;
-  margin-bottom: calc(var(--default-small-gap) / 3);
 }
 .label-text {
   font-size: 12px;
@@ -848,6 +847,7 @@ button {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   transition: border-color var(--transition-dur-and-fun);
+  margin-bottom: calc(var(--default-small-gap) / 3);
 }
 
 .modal-input:focus {
@@ -864,13 +864,13 @@ button {
   width: 18px;
   height: 18px;
   left: 16px;
-  top: 50%;
+  top: calc(50% - (var(--default-small-gap) / 6));
   transform: translateY(-50%);
   fill: var(--color-dark);
   transition: fill var(--transition-dur-and-fun);
 }
 
-.modal-label:focus-within .modal-input-icon {
+.modal-input:focus-within + .modal-input-icon {
   fill: var(--color-primary-brand);
 }
 
